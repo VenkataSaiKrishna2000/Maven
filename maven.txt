@@ -1,0 +1,69 @@
+*Maven is a build management tool. Using a simple pom.xml, one can configure all the dependencies needed to build, test and run the code. Maven manages the full lifecycle of a test project.
+
+*Maven is a great tool that can sustain, support, and assist all stages involved in software development.
+
+
+*Apache Maven is ready to serve you for creating a project from scratch, building, testing, reporting, documenting, guiding, ensuring code quality, transparent migration, project 
+modularization, deployment, centralized remote repositories, and so forth, as a complex and comprehensive tool dedicated to software project management. 
+Maven is an important “player” in Agile team collaboration.
+
+
+
+*Maven is basically a suite of plug-ins that work together or separately (plug-in centric) to accomplish different kind of tasks. For example, Maven allows us to create a Java project
+ from Maven archetypes (templates) or from a pom.xml file. Among Maven archetypes we have:
+
+An archetype to generate a sample Maven project: maven-archetype-quickstart
+
+An archetype to generate a simplified sample J2EE application: maven-archetype-j2ee-simple
+
+An archetype to generate a sample Maven Web application project: maven-archetype-webapp
+
+
+*GroupId: The unique hierarchical location of a project within a Maven repository. We use the local Maven repository that resides on your computer. Here, you can put something composed 
+from your organization (domain) name and the project name (for example, org.mycompany.myproj).Further sub-modules can be derived from this name 
+
+*ArtifactId: Represents the name of the project without version (for example, myproj).Typically, this is the name of the project as it is known by its users
+
+
+*Basically, the presence of a pom.xml file in a project is a clear indicator that this is a Maven project. Maven knows this file as the XML representation of the project.
+This file may contain a lot of information, such as metadata, dependencies, configurations, project organization, paths, profiles, and so forth. If you check, there are two projects; 
+you can notice that both of them contain a pom.xml file in the root.
+
+*Ant doesn't has formal conventions, so we need to provide information of the project structure in build.xml file.
+
+*Maven has a convention to place source code, compiled code etc. So we don't need to provide information about the project structure in pom.xml file.
+
+*Build Lifecycle is a well-defined sequence of phases, which define the order in which the goals are to be executed. 
+Here phase represents a stage in life cycle. As an example, a typical Maven Build Lifecycle consists of the following sequence of phases.
+
+*prepare-resources	resource copying	Resource copying can be customized in this phase.
+      *validate:   Validating the information (Validates if the project is correct and if all necessary information is available.)
+      *compile:   compilation (Source code compilation is done in this phase.)
+      *Test:      Testing (Tests the compiled source code suitable for testing framework.)
+      *package:   packaging (This phase creates the JAR/WAR package as mentioned in the packaging in POM.xml).
+      *install :  installation (This phase installs the package in local/remote maven repository).
+      *Deploy:    Deploying (Copies the final package to the remote repository).
+
+
+*Maven has the following three standard lifecycles −
+    -clean
+    -default(or build)
+    -site
+
+*Maven can add all the dependencies required for the project automatically by reading pom file.
+
+*One can easily build their project to jar,war etc. as per their requirements using Maven.
+
+*Maven makes easy to start project in different environments and one doesn’t needs to handle the dependencies injection, builds, processing, etc.
+Adding a new dependency is very easy. One has to just write the dependency code in pom file.
+
+
+*Maven clean goal (clean:clean) is bound to the clean phase in the clean lifecycle. Its clean:cleangoal deletes the output of a build by deleting the build directory.
+Thus, when mvn clean command executes, Maven deletes the build directory.
+
+
+
+*POM refers to Project Object Model. It is an XML file which contains the information about the project and various configuration detail used by Maven to build the project like build
+directory, source directory, dependencies, test source directory, plugin, goals etc.
+
+
